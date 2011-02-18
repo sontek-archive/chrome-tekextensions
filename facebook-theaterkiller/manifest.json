@@ -1,0 +1,11 @@
+{
+  "name": "Kill Facebook Theater Mode",
+  "version": "1.0",
+  "description": "This disables the popup dialog when you click on a photo.",
+  "content_scripts": [
+		{
+			"matches": ["http://www.facebook.com/*", "https://www.facebook.com/*"],
+			"js": ["killtheater.js"]
+		}
+	]
+}
